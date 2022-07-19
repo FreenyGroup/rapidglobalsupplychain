@@ -108,14 +108,7 @@
                     </ul>
                   </li>
                   <li><a href="services.html">Services</a></li>
-                  <li>
-                    <a href="about.html"
-                      >About <i class="fas fa-angle-down"></i
-                    ></a>
-                    <ul class="sub-menu">
-                      <li><a href="team.html">team</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="about.html">about</a></li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
@@ -374,7 +367,13 @@
             <div class="col-lg-9 col-md-8 col-12">
               <div class="contact-form7-wrapper">
                 <div class="contact-form">
-                  <form action="mail.php" class="row" id="contact-form">
+                  <form
+                    name="uk-contact"
+                    method="POST"
+                    data-netlify="true"
+                    class="row"
+                    id="contact-form"
+                  >
                     <div class="col-md-6 col-12">
                       <div class="single-personal-info">
                         <input type="text" id="fname" placeholder="Name" />

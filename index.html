@@ -110,12 +110,7 @@
                     </ul>
                   </li>
                   <li><a href="services.html">Services</a></li>
-                  <li>
-                    <a href="about.html">About <i class="fas fa-angle-down"></i></a>
-                    <ul class="sub-menu">
-                      <li><a href="team.html">team</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="about.html">about</a></li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
@@ -236,7 +231,7 @@
                     data-delay-in="0.5"
                   >
                     We are committed to providing our customers with exceptional
-                    service while offering our employees
+                    service
                   </p>
                   <a
                     href="contact.html"
@@ -273,7 +268,7 @@
                     data-delay-in="0.5"
                   >
                     We are committed to providing our customers with exceptional
-                    service while offering our employees
+                    service
                   </p>
                   <a
                     href="contact.html"
@@ -576,115 +571,7 @@ tainerized</li>
       </div>
     </section>
 
-   
-
-    <section class="team-section section-padding section-bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="block-contents mb-20">
-              <div class="section-title">
-                <h5 class="textleft">team</h5>
-                <span>Our Team</span>
-                <h2>Meet Our <span>Amazing Team</span></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xl-3 col-md-6 col-12">
-            <div
-              class="single-team-member bg-cover"
-              style="background-image: url('assets/img/team/5.jpg')"
-            >
-              <div class="member-details">
-                <span>USA Branch Manager</span>
-                <h3>Mohamed Freeny</h3>
-              </div>
-              <div class="social-icons">
-                <div class="plus-icon"><i class="fal fa-plus"></i></div>
-                <div class="top">
-                  <a href="mailto:freeny@rapidglobalsupplychain.com"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </div>
-                <div class="right">
-                  <a href="tel:+15715073117"><i class="fas fa-phone"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-12">
-            <div
-              class="single-team-member bg-cover"
-              style="background-image: url('assets/img/team/6.jpg')"
-            >
-              <div class="member-details">
-                <span>Sudan Branch Manager</span>
-                <h3>Ahmed Hassan</h3>
-              </div>
-              <div class="social-icons">
-                <div class="plus-icon"><i class="fal fa-plus"></i></div>
-                <div class="top">
-                  <a href="tel:+249912614484"><i class="fas fa-phone"></i></a>
-                  <a href="tel:+249912312327"><i class="fas fa-phone"></i></a>
-                </div>
-                <div class="right">
-                  <a href="mailto:ahassan@rapidglobalsupplychain.com"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-12">
-            <div
-              class="single-team-member bg-cover"
-              style="background-image: url('assets/img/team/7.jpg')"
-            >
-              <div class="member-details">
-                <span>UK Branch Manager</span>
-                <h3>Aelkogali</h3>
-              </div>
-              <div class="social-icons">
-                <div class="plus-icon"><i class="fal fa-plus"></i></div>
-                <div class="top">
-                  <a href="tel:+447459929587"><i class="fas fa-phone"></i></a>
-                </div>
-                <div class="right">
-                  <a href="mailto:aelkogali@rapidglobalsupplychain.com"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-12">
-            <div
-              class="single-team-member bg-cover"
-              style="background-image: url('assets/img/team/8.jpg')"
-            >
-              <div class="member-details">
-                <span>Saudi Arabia Branch Manager</span>
-                <h3>Mummar Attia</h3>
-              </div>
-              <div class="social-icons">
-                <div class="plus-icon"><i class="fal fa-plus"></i></div>
-                <div class="top">
-                  <a href="tel:+966550636228"><i class="fas fa-phone"></i></a>
-                </div>
-                <div class="right">
-                  <a href="mailto:muamarattia@rapidglobalsupplychain.com"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
 
     <section
       class="request-a-quote-section theme-bg bg-cover calculate-wrapper section-padding"
@@ -736,7 +623,7 @@ tainerized</li>
             <div class="request-quote-form-wrapper mt-5 mt-xl-0 ms-xl-3">
               <h4>Your Information</h4>
               <div class="request-quote-form">
-                <form action="#">
+                <form name="main-contact" method="POST" data-netlify="true">
                   <div class="row d-flex align-item-center">
                     <div class="col-sm-6 col-12">
                       <input type="text" name="name" placeholder="Full name" />
@@ -764,25 +651,28 @@ tainerized</li>
                         placeholder="City of departure"
                       />
                     </div>
-                    <div class="col-sm-6 col-12">
+                    <div class="col-12">
                       <select name="ftype" class="wide" id="transfreight">
                         <option value="type">Freight type</option>
-                        <option value="air">Air Freight</option>
-                        <option value="ship">Ship Freight</option>
-                        <option value="cargo">Cargo Freight</option>
-                        <option value="road">Road Freight</option>
-                        <option value="rail">rail Freight</option>
+                        <option value="air freight">Air Freight</option>
+                        <option value="ship freight">Ship Freight</option>
+                        <option value="cargo freight">Cargo Freight</option>
+                        <option value="road freight">Road Freight</option>
+                        <option value="rail freight">rail Freight</option>
+                        <option value="Sourcing/Procurement">Sourcing/Procurement</option>
+                        <option value="shipping & Freight Forwarding">Shipping & Freight Forwarding</option>
+                        <option value="transport">Transport</option>
+                        <option value="relocation">Relocation</option>
+                        <option value="warehousing">Warehousing</option>
+                        <option value="Cargo Handling & Packaging">Cargo Handling & Packaging</option>
+                        <option value="Customs Clearance">Customs Clearance</option>
+                        <option value="Personal Effects Shipping">Personal Effects Shipping</option>
+                        <option value="Stevedoring services">Stevedoring services</option>
+                        <option value="Export and Import">Export and Import</option>
+                        <option value="Chartering service - Aircraft and vessel chartering">Chartering service (Aircraft and vessel chartering)</option>
                       </select>
                     </div>
-                    <div class="col-sm-6 col-12">
-                      <select name="incoterms" class="wide" id="incoterms">
-                        <option value="incotermstype">Incoterms</option>
-                        <option value="value1">Value 1</option>
-                        <option value="value2">Value 2</option>
-                        <option value="value3">Value 3</option>
-                        <option value="value4">Value 4</option>
-                      </select>
-                    </div>
+                    
                     <div class="col-6 col-sm-3">
                       <input type="text" name="weight" placeholder="Weight" />
                     </div>
